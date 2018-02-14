@@ -7,7 +7,6 @@ url = 'http://jwmis.hnie.edu.cn/jwweb/'
 def set_params(ss, key, value):
     ss.headers[key] = value
 
-
 def create(path):
     session = requests.session()
     set_params(session, 'User-Agent',
