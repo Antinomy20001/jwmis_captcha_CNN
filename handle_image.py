@@ -58,12 +58,3 @@ def crop(img):
 
 def handle(path):
     return crop(binary(depoint(depoint(depoint(Image.open(path).convert('L'))))))
-
-
-# if __name__ == '__main__':
-#     path = sys.argv[1]
-# #     to = sys.argv[2]
-
-#     #depoint(depoint(depoint(Image.open(path).convert('L')))).save(to + '.jpg')
-#     for i in range(4):
-#         imgs[i].save('%d.jpg' % i)
